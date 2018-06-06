@@ -1,4 +1,4 @@
-package org.sdkotlin.meetup.effectivejava.items3and4
+package org.sdkotlin.meetup.effectivejava.item3and4
 
 /* Effective Java
 Item 3: Enforce the singleton property with a private constructor or an enum type
