@@ -1,6 +1,7 @@
-package org.sdkotlin.meetup.effectivejava.item19
+package org.sdkotlin.meetup.effectivejava.item18and19
 
 /* Effective Java
+Item 18: Favor composition over inheritance
 Item 19: Design and document for inheritance or else prohibit it
  */
 
