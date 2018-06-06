@@ -2,7 +2,8 @@ package org.sdkotlin.meetup.idioms
 
 // Use data classes for "multiple return values"
 
-data class Point3D(val x: Double = 0.0, val y: Double = 0.0, val z: Double = 0.0)
+data class Point3D(val x: Double = 0.0, val y: Double = 0.0,
+		val z: Double = 0.0)
 
 fun getOrigin() = Point3D()
 
