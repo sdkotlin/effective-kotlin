@@ -1,6 +1,6 @@
 package org.sdkotlin.meetup.effectivejava.item2
 
-/*
+/* Effective Java
 Item 2: Consider a builder when faced with many constructor parameters
  */
 

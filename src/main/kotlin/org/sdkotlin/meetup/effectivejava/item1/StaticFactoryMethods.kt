@@ -4,9 +4,8 @@ import java.nio.charset.*
 import java.time.Month.*
 import java.util.*
 
-/*
-Effective Java - Item 1: Consider static factory methods instead of constructors
-
+/* Effective Java
+Item 1: Consider static factory methods instead of constructors
 - One advantage of static factory methods is that, unlike constructors, they
   have names.
 - A second advantage of static factory methods is that, unlike constructors,
