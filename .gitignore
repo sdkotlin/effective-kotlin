@@ -17,6 +17,9 @@
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
 
+# Checkstyle
+.idea/checkstyle-idea.xml
+
 # Gradle:
 .idea/**/gradle.xml
 .idea/**/libraries
