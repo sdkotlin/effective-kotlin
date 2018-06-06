@@ -1,4 +1,4 @@
-package org.sdkotlin.meetup
+package org.sdkotlin.meetup.idioms
 
 // Use data classes for "multiple return values"
 

@@ -1,4 +1,4 @@
-package org.sdkotlin.meetup
+package org.sdkotlin.meetup.idioms
 
 import org.json.*
 import java.time.*
@@ -41,6 +41,8 @@ fun main(args: Array<String>) {
 
 	val partialJson = "'usergroup' : 'SD Kotlin'"
 	val completeJson = "{ $partialJson }"
-	println("Correct JSON parses to \"${parseJson(completeJson)}\"")
-	println("Incorrect JSON parses to \"${parseJson(partialJson)}\"")
+	println("Correct JSON parses to \"${parseJson(
+			completeJson)}\"")
+	println("Incorrect JSON parses to \"${parseJson(
+			partialJson)}\"")
 }

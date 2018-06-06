@@ -1,4 +1,4 @@
-package org.sdkotlin.meetup
+package org.sdkotlin.meetup.effectivejava.item1
 
 import java.nio.charset.*
 import java.time.Month.*
@@ -27,18 +27,20 @@ fun main(args: Array<String>) {
 
 	// Java static factory usage
 	val charset = Charset.forName("ASCII")
-	println("Java charset is ${charset.name()}")
+	println("Java charset is \"${charset.name()}\"")
 
 	// Kotlin companion object factory function usage
-	val alienCharset = AlienCharset.forName("Klingon")
-	println("Alien charset is ${alienCharset.name()}")
+	val alienCharset =
+			AlienCharset.forName("Klingon")
+	println("Alien charset is \"${alienCharset.name()}\"")
 
 	// Kotlin companion object extension factory function usage
 	val grootSays = String.valueOf(Groot())
-	println("Groot says \"$grootSays\"")
+	println("Groot says, \"$grootSays\"")
 
 	// Kotlin top-level factory function usage
-	val months = sortedMapOf(2 to FEBRUARY, 1 to JANUARY, 3 to MARCH)
+	val months = sortedMapOf(2 to FEBRUARY, 1 to JANUARY,
+			3 to MARCH)
 	println("The months in order are $months")
 }
 
