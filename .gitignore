@@ -21,8 +21,8 @@
 .idea/**/gradle.xml
 .idea/**/libraries
 
-# Checkstyle (for now)
-.idea/checkstyle-idea.xml
+# IntelliJ
+out/
 
 ### macOS template
 # General
