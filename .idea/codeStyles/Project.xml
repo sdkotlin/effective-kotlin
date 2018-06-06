@@ -6,6 +6,8 @@
         <option name="SMART_TABS" value="true" />
       </value>
     </option>
+    <option name="RIGHT_MARGIN" value="100" />
+    <option name="SOFT_MARGINS" value="80,100,120" />
     <JetCodeStyleSettings>
       <option name="NAME_COUNT_TO_USE_STAR_IMPORT" value="1" />
       <option name="NAME_COUNT_TO_USE_STAR_IMPORT_FOR_MEMBERS" value="1" />
