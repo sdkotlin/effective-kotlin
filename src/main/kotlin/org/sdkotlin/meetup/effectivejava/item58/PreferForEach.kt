@@ -16,11 +16,11 @@ fun main(args: Array<String>) {
 	}
 	*/
 
-	for (i in shapes.indices) {
+	for (i: Int in shapes.indices) {
 		println("The shape is ${shapes[i]}")
 	}
 
-	for (shape in shapes) {
+	for (shape: String in shapes) {
 		println("Again the shape is $shape")
 	}
 }
