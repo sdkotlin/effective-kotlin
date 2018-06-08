@@ -10,9 +10,12 @@ Item 4: Enforce noninstantiability with a private constructor
 
 object HelloSingleton {
 
-	private const val mood = "great"
+	const val DEFAULT_MOOD = "fine"
+
+	private var mood = DEFAULT_MOOD
 
 	fun howYouDoin() {
+		mood = "great"
 		println("${mood.capitalize()}, thanks for asking!")
 	}
 }
