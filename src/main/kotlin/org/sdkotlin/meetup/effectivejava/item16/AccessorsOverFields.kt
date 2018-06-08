@@ -10,16 +10,29 @@ Item 16: In public classes, use accessor methods, not public fields
 data class Programmer(val name: String) {
 	var languages = "Kotlin"
 		set(value) {
-			if (value == "Kotlin") field += ", and $value"
+			when (value) {
+				"Kotlin", "Java" -> {
+					println("""DEBUG: Appending "$value" to "$field"""")
+					field += ", and $value"
+				}
+				else -> println("""DEBUG: Ignoring "$value"""")
+			}
 		}
+		get() = "$field!"
+
+	val favoriteIde = "IntelliJ"
+		get() = "$field. 🙂"
 }
 
 fun main(args: Array<String>) {
 
 	val programmer = Programmer("Jim")
 
+	// Look, Ma, "field access"
 	programmer.languages = "Java"
 	programmer.languages = "Kotlin"
+	programmer.languages = "Perl"
 
-	println("${programmer.name} knows ${programmer.languages}.")
+	println("${programmer.name} knows ${programmer.languages}")
+	println("Their favorite IDE is ${programmer.favoriteIde}")
 }
