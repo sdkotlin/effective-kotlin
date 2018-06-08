@@ -18,18 +18,29 @@ object OlympicTriplets {
 	}
 }
 
+fun good(triplets: OlympicTriplets) {
 
-fun main(args: Array<String>) {
-
-	// Copy Leila so as not to change her age
+	// Copy Leila so as not to change her age on the passed parameter
 	val leilaClone = OlympicTriplets.leila.copy()
 
 	leilaClone.age++
 
-	println(OlympicTriplets)
+	println("Leila's clone is ${leilaClone.age} years old.")
+}
 
-	// Otherwise...
+fun bad(triplets: OlympicTriplets) {
+
+	println("Unless we don't make a defensive copy, in which case...")
 	OlympicTriplets.leila.age++
+}
 
-	println(OlympicTriplets)
+fun main(args: Array<String>) {
+
+	good(OlympicTriplets)
+
+	println("The original Leila is still ${OlympicTriplets.leila.age}.")
+
+	bad(OlympicTriplets)
+
+	println("The original Leila is now ${OlympicTriplets.leila.age}.")
 }
