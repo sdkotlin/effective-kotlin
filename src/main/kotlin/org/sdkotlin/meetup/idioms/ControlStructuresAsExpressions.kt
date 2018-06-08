@@ -7,6 +7,7 @@ import java.time.Month.*
 // Use `if` as an expression in place of the absent ternary operator
 
 fun toBinary(boolean: Boolean): Byte {
+	// return (boolean) ? 1 : 0 // Doesn't compile!
 	return if (boolean) 1 else 0
 }
 
