@@ -6,7 +6,7 @@ Item 62: Avoid strings where other types are more appropriate
 
 // Data classes in Kotlin are so easy!
 
-data class EmailAddress(val address: String)
+data class EmailAddress(val address: String, val name: String)
 
 fun send(emailAddress: String) {
 	println("Sending to $emailAddress")
@@ -14,8 +14,8 @@ fun send(emailAddress: String) {
 
 // vs.
 
-fun send(emailAddress: EmailAddress){
+fun send(emailAddress: EmailAddress) {
 	println("Sending to ${emailAddress.address}")
 }
 
-// Easy to add a "name" property in the future!
+// It's safer and easier to add a "name" property to the data class in the future!
