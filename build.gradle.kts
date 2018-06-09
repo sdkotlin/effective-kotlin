@@ -26,7 +26,9 @@ tasks.withType<KotlinCompile> {
 	kotlinOptions.jvmTarget = "1.8"
 }
 
-task<Wrapper>("wrapper") {
-	gradleVersion = "4.8"
-	distributionType = DistributionType.ALL
+tasks {
+	"wrapper"(Wrapper::class) {
+		gradleVersion = "4.8"
+		distributionType = DistributionType.ALL
+	}
 }
