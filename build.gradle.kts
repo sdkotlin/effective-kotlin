@@ -1,8 +1,10 @@
+import org.gradle.api.JavaVersion.*
 import org.gradle.api.tasks.wrapper.Wrapper.DistributionType
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-	kotlin("jvm") version "1.2.50"
+	kotlin("jvm") version "1.2.70"
+	id("com.github.ben-manes.versions") version "0.20.0"
 }
 
 group = "org.sdkotlin"
@@ -13,22 +15,23 @@ repositories {
 }
 
 dependencies {
-	compile(kotlin("stdlib-jdk8"))
-	compile("org.json:json:20180130")
+	implementation(kotlin("stdlib-jdk8"))
+	implementation("org.json:json:20180813")
 }
 
 java {
-	sourceCompatibility = JavaVersion.VERSION_1_8
-	targetCompatibility = JavaVersion.VERSION_1_8
-}
-
-tasks.withType<KotlinCompile> {
-	kotlinOptions.jvmTarget = "1.8"
+	sourceCompatibility = VERSION_1_8
+	targetCompatibility = VERSION_1_8
 }
 
 tasks {
-	"wrapper"(Wrapper::class) {
-		gradleVersion = "4.8"
+
+	withType<KotlinCompile> {
+		kotlinOptions.jvmTarget = VERSION_1_8.toString()
+	}
+
+	getByName<Wrapper>("wrapper") {
+		gradleVersion = "4.10.1"
 		distributionType = DistributionType.ALL
 	}
 }
