@@ -1,7 +1,7 @@
-# Created by .ignore support plugin (hsz.mobi)
 ### JetBrains template
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
-# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# IntelliJ
+out/
 
 # User-specific stuff:
 .idea/**/workspace.xml
@@ -17,20 +17,20 @@
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
 
-# Checkstyle
-.idea/checkstyle-idea.xml
-
 # Gradle:
 .idea/**/gradle.xml
 .idea/**/libraries
 
-# IntelliJ
-out/
+# Checkstyle
+.idea/checkstyle-idea.xml
 
-### macOS template
-# General
-.DS_Store
+# SonarLint
+.idea/sonarlint
+
+# QAPlug
+.idea/qaplug_profiles.xml
 
 ### Gradle template
+
 .gradle
 /build/
