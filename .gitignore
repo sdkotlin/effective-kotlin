@@ -19,6 +19,7 @@ out/
 
 # Gradle:
 .idea/modules
+.idea/modules.xml
 .idea/**/gradle.xml
 .idea/**/libraries
 
