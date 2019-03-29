@@ -1,10 +1,10 @@
 import org.gradle.api.JavaVersion.*
-import org.gradle.api.tasks.wrapper.Wrapper.DistributionType
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.gradle.api.tasks.wrapper.Wrapper.*
+import org.jetbrains.kotlin.gradle.tasks.*
 
 plugins {
-	kotlin("jvm") version "1.2.70"
-	id("com.github.ben-manes.versions") version "0.20.0"
+	kotlin("jvm") version "1.3.21"
+	id("com.github.ben-manes.versions") version "0.21.0"
 }
 
 group = "org.sdkotlin"
@@ -31,7 +31,7 @@ tasks {
 	}
 
 	getByName<Wrapper>("wrapper") {
-		gradleVersion = "4.10.2"
+		gradleVersion = "5.3.1"
 		distributionType = DistributionType.ALL
 	}
 }
